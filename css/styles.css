@@ -1,0 +1,225 @@
+/* main color 212121
+secondary color 757575
+logo colors 000000, 2196F3
+accent 2196F3,
+white FFFFFF,
+additional background 2F303A, F5F4FAb 
+nav menu lower line ECECEC*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --additional-background-color: #2F303A;
+    --main-white-color: #FFFFFF;
+    --passive-button-bg: #F5F4FA;
+    --additional-text-color: rgba(255, 255, 255, 0.6);
+
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.list{
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* Logo */
+.header .logo {
+    color: #000000;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+
+}    
+
+.header .logo:hover, .header .logo:focus {
+    color: var(--accent-color);
+}
+
+span {
+    color: var(--accent-color);
+}
+
+
+ /* Header */
+
+a[title] {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header .link:hover, .header .link:focus {
+    color: var(--accent-color);
+}
+
+/* Site-nav */
+.site-nav .link {
+    color: var(--title-text-color); 
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+.hero {
+    background-color: var(--additional-background-color);
+}
+.hero-title {
+    color: var(--main-white-color);
+    font-weight: 900; 
+    font-size: 44px; 
+    line-height: 1.36; 
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero .button {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    font-family: inherit; 
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
+
+/* Features */
+
+.features .title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Services */
+
+
+/* Team */
+
+.team .title {
+    color: var(--title-text-color);
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.team .subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;    
+
+}
+
+
+/* Portfolio */
+
+.portfolio .title {
+    color: var(--title-text-color);
+    font-weight: 700;  
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06;
+}
+
+.portfolio .subtitle {
+    font-size: 16px;
+    line-height: 1.9;
+
+}
+
+.filters .button {
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6; 
+    background-color: var(--passive-button-bg);
+    border-color: transparent;
+    cursor: pointer;
+   
+}
+
+.filters .button:hover, .filters .button:focus, .filters .button:active{
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--additional-background-color);
+}
+
+.footer .logo{
+    color: var(--main-white-color);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+a[href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"] {
+ color: var(--main-white-color);
+ font-size: 14px;
+ line-height: 1.7;
+
+}
+a[href="mailto:info@example.com"], 
+a[href="tel:+380991111111"] {
+    color: var(--additional-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+
+}
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-color);
+}
+.address {
+    font-style: normal;
+}
