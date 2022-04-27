@@ -6,6 +6,16 @@ white FFFFFF,
 additional background 2F303A, F5F4FAb 
 nav menu lower line ECECEC*/
 
+html {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -15,22 +25,43 @@ nav menu lower line ECECEC*/
     --passive-button-bg: #F5F4FA;
     --additional-text-color: rgba(255, 255, 255, 0.6);
 
+
 }
 
+
 body {
+    margin: 0;
+
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+
+    
 }
 
 .list{
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+    
+}
+
+
+.section {
+    outline: 10px dotted blue;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.section.no-padding {
+    padding-top: 0;
 }
 
 .section-title {
@@ -62,7 +93,10 @@ span {
 
  /* Header */
 
+
 a[title] {
+    padding: 0;
+    margin: 0;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -76,8 +110,10 @@ a[title] {
 
 /* Site-nav */
 .site-nav .link {
-    color: var(--title-text-color); 
-    
+    padding: 0;
+    margin: 0;
+
+    color: var(--title-text-color);   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -94,21 +130,44 @@ a[title] {
 }
 
 
+
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px dotted red;
+
+
+}
+
+
+
 /* Hero */
 .hero {
+    text-align: center;
     background-color: var(--additional-background-color);
+    
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--main-white-color);
     font-weight: 900; 
     font-size: 44px; 
     line-height: 1.36; 
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
 }
 
 .hero .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    
+    
     color: var(--main-white-color);
     background-color: var(--accent-color);
     border-color: transparent;
@@ -118,12 +177,38 @@ a[title] {
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    
+}
+
+/*width: 200px;
+height: 50px; */
+
+/* Features */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
 
 }
 
-/* Features */
 
 .features .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.14;
@@ -131,6 +216,7 @@ a[title] {
 }
 
 .feature-description {
+    margin: 0;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -138,7 +224,13 @@ a[title] {
 /* Services */
 
 
+
 /* Team */
+.section-team {
+    background-color: var(--passive-button-bg);
+}
+
+
 
 .team .title {
     color: var(--title-text-color);
@@ -156,6 +248,9 @@ a[title] {
 
 
 /* Portfolio */
+.portfolio a {
+    text-decoration: none;
+}
 
 .portfolio .title {
     color: var(--title-text-color);
@@ -193,9 +288,12 @@ a[title] {
 /* Footer */
 .footer {
     background-color: var(--additional-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .logo{
+    padding: 0;
     color: var(--main-white-color);
     font-family: Raleway, cursive;
     font-weight: 700;
@@ -211,6 +309,7 @@ a[href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,
 }
 a[href="mailto:info@example.com"], 
 a[href="tel:+380991111111"] {
+    padding: 0;
     color: var(--additional-text-color);
     font-size: 14px;
     line-height: 1.7;
@@ -222,4 +321,10 @@ a[href="tel:+380991111111"] {
 }
 .address {
     font-style: normal;
+    margin-top: 20px;
 }
+
+.address li + li {
+    margin-top: 9px;
+
+} 
